@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "/Tasky/",
+  base: '/Tasky/', // 👈 لازم يكون نفس اسم الريبو بالظبط
   plugins: [react()],
-  server:true,
+  server: {
+    host: true, // علشان تشغل المشروع على الشبكة المحلية
+  },
 })
