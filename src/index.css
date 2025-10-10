@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Almarai:wght@300;400;700;800&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Gothic+A1&family=Pacifico&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* عام */
+html, body,todo {
+  height: 100%;
+  background-color: #F6F5F5;
+  overflow-x: hidden; /* منع الانزلاق الأفقي */
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 1s ease, color 1s ease;
+}
+ 
+
+/* utility لإخفاء scrollbar لكن مع السماح بالـ scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* اختياري: لو مش عايز تمنع تحديد النص بالجسم كله، شيل السطر user-select */
