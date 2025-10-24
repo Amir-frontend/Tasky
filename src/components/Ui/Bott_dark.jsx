@@ -22,13 +22,13 @@ export default function Bott_dark() {
 
   return (
     <button
-  onClick={toggleDarkMode}
-  className={`flex items-center w-32 gap-2 mt-10 mx-auto px-4 py-2 rounded-xl transition duration-300 
+      onClick={toggleDarkMode}
+      className={`flex items-center w-32 gap-2 mt-10 mx-auto px-4 py-2 rounded-xl transition duration-300 
               ${darkMode 
                 ? "bg-slate-100 text-black font-medium" 
                 : "bg-background-dark text-text-dark font-medium"}`}
->
-  {darkMode ? "🌙 Dark" : "☀️ Light"}
-</button>
+    >
+    {darkMode ? "🌙 Dark" : "☀️ Light"}
+  </button>
   );
 }

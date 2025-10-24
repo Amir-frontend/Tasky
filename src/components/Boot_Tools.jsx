@@ -9,14 +9,14 @@ export default function Boot_Tools() {
   return (
     <div >
       <button onClick={()=>setActiveFilter("All")}
-         className="p-2 text-sm focus:text-base focus:text-blue-600 text-text dark:text-text-dark font-abhaya">
+         className="px-2 py-1 text-sm focus:text-base  focus:bg-black focus:text-text-dark rounded-2xl text-text dark:text-text-dark font-abhaya">
         All
       </button>
       {ButtonLoop.map((cat) => (
         <button 
           onClick={()=>setActiveFilter(cat)} 
           key={cat} 
-          className="p-2 text-sm focus:text-base focus:text-blue-600 text-text dark:text-text-dark font-abhaya"
+          className="px-2 py-1 text-sm focus:text-base focus:bg-black focus:text-text-dark rounded-2xl text-text dark:text-text-dark font-abhaya"
         >
           {cat}
         </button>

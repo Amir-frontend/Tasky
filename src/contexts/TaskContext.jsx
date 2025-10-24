@@ -84,7 +84,7 @@ export default function TaskProvider({ children }) {
   const shouldShow = opan || isLargeScreen;
 
     const wrapperClasses = isLargeScreen
-    ? 'static block h-full fixed w-[230px] mt-16 '
+    ? 'static block h-full fixed w-[210px] mt-16 '
     : `fixed top-0 z-40 w-full h-[100vh] ${shouldShow ? 'right-0' : '-right-full'}`;
 
     const innerClasses = isLargeScreen

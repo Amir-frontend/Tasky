@@ -35,7 +35,7 @@ export default function Navpar() {
 
             <ul className=" mt-24 w-full flex flex-col items-center gap-1 text-abhaya">
               <li className="w-full h-full flex justify-center">
-                <NavLink to="/"  className={({ isActive }) => `text-lg w-9/12 p-3 dark:text-text-dark transition-colors rounded-2xl font-abhaya flex items-center ${
+                <NavLink to="/Dashbord/" end  className={({ isActive }) => `text-lg w-9/12 p-3 dark:text-text-dark transition-colors rounded-2xl font-abhaya flex items-center ${
                             isActive ? 'bg-black text-white dark:text-text' : 'hover:bg-black hover:text-white'}`}>
                   <DashboardIcon sx={{ fontSize: 27 }} className="mr-1 pb-1" />
                   Dashboard
@@ -43,7 +43,7 @@ export default function Navpar() {
               </li>
 
               <li className="w-full h-full flex justify-center">
-                <NavLink to="/HomeReports"
+                <NavLink to="/Dashbord/Reports"
                   className={({ isActive }) =>`text-lg w-9/12 p-3 dark:text-text-dark rounded-2xl font-abhaya flex items-center ${
                           isActive ? 'bg-black text-white dark:text-text' : 'hover:bg-black hover:text-white'}`}>
                   <DonutSmallRoundedIcon sx={{ fontSize: 27 }} className="mr-1 pb-1" />
@@ -52,7 +52,7 @@ export default function Navpar() {
               </li>
 
               <li className="w-full h-full flex justify-center">
-                <NavLink to="/ToDo" 
+                <NavLink to="/Dashbord/ToDo" 
                 className={({ isActive }) =>`text-lg w-9/12 p-3 dark:text-text-dark rounded-2xl font-abhaya flex items-center ${
                               isActive ? 'bg-black text-white dark:text-text' : 'hover:bg-black hover:text-white' }` }>
                   <AssignmentSharpIcon sx={{ fontSize: 27 }} className="mr-1 pb-1" />
@@ -61,7 +61,7 @@ export default function Navpar() {
               </li>
 
               <li className="w-full h-full flex justify-center">
-                <NavLink to="/Tools" 
+                <NavLink to="/Dashbord/Tools" 
                  className={({ isActive }) => `text-lg w-9/12 p-3 dark:text-text-dark rounded-2xl font-abhaya flex items-center ${
                              isActive ? 'bg-black text-white dark:text-text' : 'hover:bg-black hover:text-white'}`}>
                  <BuildIcon sx={{ fontSize: 27 }} className="mr-1 pb-1" />
@@ -70,7 +70,7 @@ export default function Navpar() {
               </li>
 
               <li className="w-full h-full flex justify-center">
-                <NavLink to="/6" 
+                <NavLink to="/Login" 
                  className={({ isActive }) =>`text-lg w-9/12 p-3 dark:text-text-dark rounded-2xl font-abhaya flex items-center ${
                               isActive ? 'bg-black text-white dark:text-text' : 'hover:bg-black hover:text-white'}`}>
                  <SettingsIcon sx={{ fontSize: 27 }} className="mr-1 pb-1" />

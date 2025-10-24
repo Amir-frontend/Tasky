@@ -12,7 +12,7 @@ export default function TypeInput({
   placeholder = "Search...",
 }) {
   return (
-    <div className={`items-center w-full min-w-12 m-2  ${wrapperClass}`}>
+    <div className={`items-center min-w-12 m-2  ${wrapperClass}`}>
       {/* العنوان */}
       <h2 className="mr-4 text-3xl dark:text-text-dark font-abhaya text-text font-semibold hidden md:flex">{title}</h2>
 

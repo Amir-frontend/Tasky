@@ -4,7 +4,7 @@ import TypeInput from '../components/Ui/TypeInput'
 import Tools_Items from '../components/Tools_Items'
 export default function HomeTools() {
   return (
-    <div className='dark:bg-background-dark w-full h-full py-6 text-white sm:px-3 lg:px-10 xl:px-16'>
+    <div className='dark:bg-background-dark w-full h-auto py-10 text-white sm:px-3 lg:px-10 xl:px-16'>
       <TypeInput 
         title='Tools'
         placeholder="search..."
