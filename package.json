@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://Amir-frontend.github.io/Tasky",
+   "homepage": "https://amir-frontend.github.io/Tasky",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

@@ -1,13 +1,13 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 //===================================
- export const TaskContext = createContext();
+export const TaskContext = createContext();
 // ============ start Time ===============
 export default function TaskProvider({ children }) {
   const [opan, setOpan] = useState(false);
   const [time, setTime] = useState(0);
   const [isRunning , setIsRunning] = useState(false)
-
+    const[loading , setLoading] = useState(true)
 
   useEffect(() => {
     let interval;
@@ -106,6 +106,8 @@ export default function TaskProvider({ children }) {
       isLargeScreen,
       wrapperClasses,
       innerClasses,
+      loading,
+      setLoading
      
     }}>
       {children}

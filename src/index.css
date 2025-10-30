@@ -25,3 +25,62 @@ html, body,todo {
 }
 
 /* اختياري: لو مش عايز تمنع تحديد النص بالجسم كله، شيل السطر user-select */
+
+/*Animation */
+@keyframes borderRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.border-glow {
+  position: relative;
+  border-radius: 1rem; /* نفس rounded-xl */
+  overflow: hidden;
+}
+
+.border-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* سمك الإطار */
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    rgb(37, 0, 247),
+    rgba(228, 225, 225, 0.596),
+    rgb(255, 0, 0)
+  );
+  background-size: 300% 300%;
+  animation: borderRotate 1s linear infinite;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.05); /* خلفية شفافة خفيفة */
+  border-radius: inherit;
+}
+
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2.5s linear infinite;
+}

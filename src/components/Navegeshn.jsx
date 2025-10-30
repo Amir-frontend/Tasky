@@ -26,12 +26,13 @@ export default function Navegeshn() {
        <NavLink to="/" >
         <h2 className='font-abhaya font-black text-xl md:text-1xl lg:text-2xl md:ml-9 sm:pr-[50px] xl:ml-11 xl:text-3xl dark:text-text-dark'>TASK<span className='text-primary' >Y.</span></h2>
        </NavLink>
-      <div className='flex xl:flex items-center justify-start'>
+      {location.pathname.includes("/Dashbord") && (
+ 
+        <div className='flex xl:flex items-center justify-start'>
          <span className=' dark:text-text-dark text-left hidden md:flex'><MenuIcon sx={{fontSize:35}}/></span> 
         <p className=' text-xs px-1 md:text-xl  font-abhaya dark:text-text-dark text-left'>{pagetitle}</p>
       </div>
-      
-      
+      )}
     </div>
    <TypeInput 
   placeholder="search..."
